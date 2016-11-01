@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file, which follo
 on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
+## [1.1.0] - 2016-11-01
+
+### Added
+ - Common plugin configuration to POM
+
 ## [1.0.0] - 2016-07-28
 
 ### Added
