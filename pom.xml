@@ -693,6 +693,37 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>raml-jar</id>
+            <activation>
+                <file>
+                    <exists>src/raml</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>raml</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                                <phase>package</phase>
+                                <configuration>
+                                    <classifier>raml</classifier>
+                                    <classesDirectory>${project.basedir}/src</classesDirectory>
+                                    <includes>
+                                        <include>raml/**</include>
+                                    </includes>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 
 </project>
