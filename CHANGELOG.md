@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file, which follo
 on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
+## [1.3.0] - 2017-01-06
+
+### Fixed
+- Missing 'plugins.maven.assembly.version' property
+
+
 ## [1.2.0] - 2016-11-14
 
 ### Added
