@@ -56,7 +56,6 @@
         <plugins.maven-plugin-plugin.version>3.4</plugins.maven-plugin-plugin.version>
 
         <plugins.maven.wagon.version>2.10</plugins.maven.wagon.version>
-        <plugins.maven.wagon-webdav.version>2.10</plugins.maven.wagon-webdav.version>
         <plugins.maven.war.version>2.6</plugins.maven.war.version>
         <plugins.versions.version>2.2</plugins.versions.version>
         <plugins.maven.shade.version>2.4.3</plugins.maven.shade.version>
@@ -365,11 +364,6 @@
                             <groupId>org.apache.maven.wagon</groupId>
                             <artifactId>wagon-ssh</artifactId>
                             <version>${plugins.maven.wagon.version}</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.apache.maven.wagon</groupId>
-                            <artifactId>wagon-webdav-jackrabbit</artifactId>
-                            <version>${plugins.maven.wagon-webdav.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
