@@ -379,7 +379,6 @@
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                         <archive>
                             <manifest>
-                                <addClasspath>true</addClasspath>
                                 <addDefaultImplementationEntries>true
                                 </addDefaultImplementationEntries>
                                 <addDefaultSpecificationEntries>true
