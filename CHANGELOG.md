@@ -4,6 +4,7 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+- Plugins and Dependencies update to latest versions
 
 ## [1.4.1] - 2017-04-28
 
