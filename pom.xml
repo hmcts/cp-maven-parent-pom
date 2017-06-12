@@ -44,29 +44,29 @@
 
         <plugins.maven.assembly.version>3.0.0</plugins.maven.assembly.version>
         <plugins.maven.clean.version>3.0.0</plugins.maven.clean.version>
-        <plugins.maven.compiler.version>3.5.1</plugins.maven.compiler.version>
-        <plugins.maven.dependency.version>2.10</plugins.maven.dependency.version>
+        <plugins.maven.compiler.version>3.6.1</plugins.maven.compiler.version>
+        <plugins.maven.dependency.version>3.0.1</plugins.maven.dependency.version>
         <plugins.maven.deploy.version>2.8.2</plugins.maven.deploy.version>
         <plugins.maven.install.version>2.5.2</plugins.maven.install.version>
-        <plugins.maven.jar.version>2.6</plugins.maven.jar.version>
-        <plugins.maven.resources.version>2.7</plugins.maven.resources.version>
-        <plugins.maven.site.version>3.4</plugins.maven.site.version>
+        <plugins.maven.jar.version>3.0.2</plugins.maven.jar.version>
+        <plugins.maven.resources.version>3.0.2</plugins.maven.resources.version>
+        <plugins.maven.site.version>3.6</plugins.maven.site.version>
         <plugins.maven.javadoc.version>2.10.4</plugins.maven.javadoc.version>
         <plugins.maven.source.version>3.0.1</plugins.maven.source.version>
-        <plugins.maven-plugin-plugin.version>3.4</plugins.maven-plugin-plugin.version>
+        <plugins.maven-plugin-plugin.version>3.5</plugins.maven-plugin-plugin.version>
 
         <plugins.maven.wagon.version>2.10</plugins.maven.wagon.version>
-        <plugins.maven.war.version>2.6</plugins.maven.war.version>
+        <plugins.maven.war.version>3.1.0</plugins.maven.war.version>
         <plugins.versions.version>2.2</plugins.versions.version>
-        <plugins.maven.shade.version>2.4.3</plugins.maven.shade.version>
+        <plugins.maven.shade.version>3.0.0</plugins.maven.shade.version>
 
         <plugins.buildnumber.version>1.4</plugins.buildnumber.version>
         <plugins.buildhelper.version>1.10</plugins.buildhelper.version>
         <plugins.coveralls.version>4.2.0</plugins.coveralls.version>
 
         <!-- testing -->
-        <plugins.maven.surefire.version>2.19.1</plugins.maven.surefire.version>
-        <plugins.maven.failsafe.version>2.19.1</plugins.maven.failsafe.version>
+        <plugins.maven.surefire.version>2.20</plugins.maven.surefire.version>
+        <plugins.maven.failsafe.version>${plugins.maven.surefire.version}</plugins.maven.failsafe.version>
         <plugins.maven.processor.version>3.1.0</plugins.maven.processor.version>
 
         <!-- Javadoc links to Java APIs -->
