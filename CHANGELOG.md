@@ -4,6 +4,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.5.0] - 2017-06-14
+
+### Changed
 - Plugins and Dependencies update to latest versions
 
 ## [1.4.1] - 2017-04-28
@@ -36,7 +40,8 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 ### Added
 - Initial release of parent POM for open source Maven projects
 
-[Unreleased]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.4.1...HEAD
+[Unreleased]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.5.0...HEAD
+[1.5.0]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.4.0...release-1.5.0
 [1.4.1]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.4.0...release-1.4.1
 [1.4.0]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.3.0...release-1.4.0
 [1.3.0]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.2.0...release-1.3.0
