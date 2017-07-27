@@ -5,9 +5,12 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.6.0] - 2017-07-26
+
 ### Changed
 - Build process improved
 - Switched to Bintray for releases
+- Simplified Dependent variable structure
 
 ## [1.5.0] - 2017-06-14
 
