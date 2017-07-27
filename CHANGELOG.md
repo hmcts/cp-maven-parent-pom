@@ -5,6 +5,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+### Changed
+- Build process improved
+- Switched to Bintray for releases
+
 ## [1.5.0] - 2017-06-14
 
 ### Changed
