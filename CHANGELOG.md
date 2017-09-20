@@ -5,6 +5,11 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+### Changed
+- Plugin versions upgraded to latest
+- PostgreSQL JDBC driver updated
+- Minimum version of Maven bumped to 3.3.9
+
 ## [1.6.0] - 2017-07-26
 
 ### Changed
