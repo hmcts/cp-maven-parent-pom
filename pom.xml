@@ -81,7 +81,7 @@
         <h2.version>1.4.196</h2.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
         <liquibase.version>3.5.3</liquibase.version>
-        <postgresql.driver.version>42.1.1</postgresql.driver.version>
+        <postgresql.driver.version>42.1.4</postgresql.driver.version>
 
         <cpp.repo.name>maven-parent-pom</cpp.repo.name>
     </properties>
