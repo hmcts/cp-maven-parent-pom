@@ -508,6 +508,7 @@
                         </execution>
                     </executions>
                     <configuration>
+                        <mutationThreshold>0</mutationThreshold>
                         <failWhenNoMutations>false</failWhenNoMutations>
                         <threads>5</threads>
                         <excludedClasses>
