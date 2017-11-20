@@ -5,6 +5,11 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.6.1] - 2017-11-20
+
+### Changed
+- Added `pitest` profile, which child projects can activate to enable mutation testing by setting `pitest.enabled` to true. 
+
 ## [1.6.0] - 2017-07-26
 
 ### Changed
@@ -47,7 +52,9 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 ### Added
 - Initial release of parent POM for open source Maven projects
 
-[Unreleased]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.5.0...HEAD
+[Unreleased]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.6.1...HEAD
+[1.6.1]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.6.0...release-1.6.1
+[1.6.0]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.5.0...release-1.6.0
 [1.5.0]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.4.0...release-1.5.0
 [1.4.1]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.4.0...release-1.4.1
 [1.4.0]: https://github.com/CJSCommonPlatform/maven-parent-pom/compare/release-1.3.0...release-1.4.0
