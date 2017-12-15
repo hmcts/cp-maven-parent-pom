@@ -5,6 +5,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.7.0] - 2017-12-15
+### Changed
+- Adjusted the *build raml jar* plugin to include a schema_catalog.json if any exists
+
 ## [1.6.1] - 2017-11-20
 
 ### Changed
