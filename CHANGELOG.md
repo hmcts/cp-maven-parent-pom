@@ -4,6 +4,8 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.7.1] - 2017-12-19
 ### Changed
 - Remove copying of schema_catalog to rmal jar
 
