@@ -749,12 +749,6 @@
                                                 <include>raml/**</include>
                                             </includes>
                                         </resource>
-                                        <resource>
-                                            <directory>${project.basedir}/target/generated-resources</directory>
-                                            <includes>
-                                                <include>META-INF/schema_catalog.json</include>
-                                            </includes>
-                                        </resource>
                                     </resources>
                                 </configuration>
                             </execution>
