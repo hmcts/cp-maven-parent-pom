@@ -59,10 +59,12 @@
         <plugins.maven.war.version>3.1.0</plugins.maven.war.version>
         <plugins.versions.version>2.2</plugins.versions.version>
         <plugins.maven.shade.version>3.0.0</plugins.maven.shade.version>
+        <plugins.maven.gpg.version>1.6</plugins.maven.gpg.version>
 
         <plugins.buildnumber.version>1.4</plugins.buildnumber.version>
         <plugins.buildhelper.version>3.0.0</plugins.buildhelper.version>
         <plugins.coveralls.version>4.3.0</plugins.coveralls.version>
+        <plugins.pgp.maven.version>1.1</plugins.pgp.maven.version>
 
         <!-- testing -->
         <plugins.maven.surefire.version>2.20</plugins.maven.surefire.version>
@@ -367,6 +369,12 @@
                     </dependencies>
                 </plugin>
 
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${plugins.maven.gpg.version}</version>
+                </plugin>
+
                 <!-- Make sure the generated web.xml is added to the WAR and not the default one -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -517,6 +525,12 @@
                             <excludedClass>*IT</excludedClass>
                         </excludedClasses>
                     </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.kohsuke</groupId>
+                    <artifactId>pgp-maven-plugin</artifactId>
+                    <version>${plugins.pgp.maven.version}</version>
                 </plugin>
             </plugins>
 
