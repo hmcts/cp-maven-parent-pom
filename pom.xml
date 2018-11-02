@@ -70,7 +70,7 @@
         <plugins.maven.surefire.version>2.22.1</plugins.maven.surefire.version>
         <plugins.maven.failsafe.version>${plugins.maven.surefire.version}</plugins.maven.failsafe.version>
         <plugins.maven.processor.version>3.3.3</plugins.maven.processor.version>
-        <plugins.pitest.version>1.2.4</plugins.pitest.version>
+        <plugins.pitest.version>1.4.3</plugins.pitest.version>
         <pitest.enabled>false</pitest.enabled>
 
         <!-- Javadoc links to Java APIs -->
@@ -80,7 +80,7 @@
         </javadoc.javaee.link>
         <javadoc.javamail.link>http://javamail.kenai.com/nonav/javadocs/</javadoc.javamail.link>
 
-        <plugins.jacoco.version>0.7.9</plugins.jacoco.version>
+        <plugins.jacoco.version>0.8.2</plugins.jacoco.version>
 
         <h2.version>1.4.196</h2.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
