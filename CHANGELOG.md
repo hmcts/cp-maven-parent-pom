@@ -5,6 +5,36 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [1.8.0] - 2018-11-02
+### Changed
+- Maven Plugin Version updates:
+  maven-assembly-version: 3.0.0 -> 3.1.0
+  maven-clean-plugin: 3.0.0 -> 3.1.0
+  maven-compiler-version: 3.6.1 -> 3.8.0
+  maven-dependency-version: 3.0.1 -> 3.1.1
+  maven-jar-version: 3.0.2 -> 3.1.0
+  maven-javadoc-version: 2.10.4 -> 3.0.1
+  maven-plugin-plugin-version: 3.5 -> 3.6.0
+  maven-processor-version: 3.3.1 -> 3.3.3
+  maven-resources-version: 3.0.2 -> 3.1.0
+  maven-shade-version: 3.0.0 -> 3.2.0
+  maven-site-version: 3.6 -> 3.7.1
+  maven-surefire-version: 2.20 -> 2.22.1
+  maven-wagon-version: 2.10 -> 3.2.0
+  maven-war-version: 3.1.0 -> 3.2.2
+
+- External maven plugins updated:
+  pitest plugin: 1.2.4 -> 1.4.3
+  jacoco plugin: 0.7.9 -> 0.8.2
+
+- Libraries updated:
+  H2: 1.4.196 -> 1.4.197
+  Hibernate: 4.3.11.Final -> 5.3.7.Final
+  Liquibase: 3.5.3 -> 3.6.2
+  Postgresql JDBC driver: 42.1.1 -> 42.2.5
+
+Note for Hibernate and Liquibase these are major updates and likely to introduce breaking changes into the code
+
 ## [1.7.1] - 2017-12-19
 ### Changed
 - Remove copying of schema_catalog to rmal jar
