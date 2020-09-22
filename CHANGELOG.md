@@ -5,7 +5,14 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [2.0.0] - 2018-11-02
+### Changed
+- Updated parent maven-super-pom to version 2.0.0
+- Moved to new Cloudsmith.io repository for hosting maven artifacts
+- Reverted the version updates made in 1.8.0 release (which was never used)
+
 ## [1.8.0] - 2018-11-02
+_NB the following release was never used and is reverted in the 2.0.0 release_
 ### Changed
 - Maven Plugin Version updates:
   maven-assembly-version: 3.0.0 -> 3.1.0

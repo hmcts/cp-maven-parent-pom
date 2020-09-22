@@ -7,7 +7,7 @@
     <parent>
         <groupId>uk.gov.justice</groupId>
         <artifactId>maven-super-pom</artifactId>
-        <version>1.1.1</version>
+        <version>2.0.0</version>
     </parent>
 
     <artifactId>maven-parent-pom</artifactId>
@@ -42,35 +42,33 @@
         <!-- Maven and 3rd party plugin versions -->
         <plugins.maven.enforcer.version>1.4.1</plugins.maven.enforcer.version>
 
-        <plugins.maven.assembly.version>3.1.0</plugins.maven.assembly.version>
-        <plugins.maven.clean.version>3.1.0</plugins.maven.clean.version>
-        <plugins.maven.compiler.version>3.8.0</plugins.maven.compiler.version>
-        <plugins.maven.dependency.version>3.1.1</plugins.maven.dependency.version>
+        <plugins.maven.assembly.version>3.0.0</plugins.maven.assembly.version>
+        <plugins.maven.clean.version>3.0.0</plugins.maven.clean.version>
+        <plugins.maven.compiler.version>3.6.1</plugins.maven.compiler.version>
+        <plugins.maven.dependency.version>3.0.1</plugins.maven.dependency.version>
         <plugins.maven.deploy.version>2.8.2</plugins.maven.deploy.version>
         <plugins.maven.install.version>2.5.2</plugins.maven.install.version>
-        <plugins.maven.jar.version>3.1.0</plugins.maven.jar.version>
-        <plugins.maven.resources.version>3.1.0</plugins.maven.resources.version>
-        <plugins.maven.site.version>3.7.1</plugins.maven.site.version>
-        <plugins.maven.javadoc.version>3.0.1</plugins.maven.javadoc.version>
+        <plugins.maven.jar.version>3.0.2</plugins.maven.jar.version>
+        <plugins.maven.resources.version>3.0.2</plugins.maven.resources.version>
+        <plugins.maven.site.version>3.6</plugins.maven.site.version>
+        <plugins.maven.javadoc.version>2.10.4</plugins.maven.javadoc.version>
         <plugins.maven.source.version>3.0.1</plugins.maven.source.version>
-        <plugins.maven-plugin-plugin.version>3.6.0</plugins.maven-plugin-plugin.version>
+        <plugins.maven-plugin-plugin.version>3.5</plugins.maven-plugin-plugin.version>
 
-        <plugins.maven.wagon.version>3.2.0</plugins.maven.wagon.version>
-        <plugins.maven.war.version>3.2.2</plugins.maven.war.version>
+        <plugins.maven.wagon.version>2.10</plugins.maven.wagon.version>
+        <plugins.maven.war.version>3.1.0</plugins.maven.war.version>
         <plugins.versions.version>2.2</plugins.versions.version>
-        <plugins.maven.shade.version>3.2.0</plugins.maven.shade.version>
-        <plugins.maven.gpg.version>1.6</plugins.maven.gpg.version>
+        <plugins.maven.shade.version>3.0.0</plugins.maven.shade.version>
 
         <plugins.buildnumber.version>1.4</plugins.buildnumber.version>
         <plugins.buildhelper.version>3.0.0</plugins.buildhelper.version>
         <plugins.coveralls.version>4.3.0</plugins.coveralls.version>
-        <plugins.pgp.maven.version>1.1</plugins.pgp.maven.version>
 
         <!-- testing -->
-        <plugins.maven.surefire.version>2.22.1</plugins.maven.surefire.version>
+        <plugins.maven.surefire.version>2.20</plugins.maven.surefire.version>
         <plugins.maven.failsafe.version>${plugins.maven.surefire.version}</plugins.maven.failsafe.version>
-        <plugins.maven.processor.version>3.3.3</plugins.maven.processor.version>
-        <plugins.pitest.version>1.4.3</plugins.pitest.version>
+        <plugins.maven.processor.version>3.3.1</plugins.maven.processor.version>
+        <plugins.pitest.version>1.2.4</plugins.pitest.version>
         <pitest.enabled>false</pitest.enabled>
 
         <!-- Javadoc links to Java APIs -->
@@ -80,12 +78,12 @@
         </javadoc.javaee.link>
         <javadoc.javamail.link>http://javamail.kenai.com/nonav/javadocs/</javadoc.javamail.link>
 
-        <plugins.jacoco.version>0.8.2</plugins.jacoco.version>
+        <plugins.jacoco.version>0.7.9</plugins.jacoco.version>
 
-        <h2.version>1.4.197</h2.version>
-        <hibernate.version>5.3.7.Final</hibernate.version>
-        <liquibase.version>3.6.2</liquibase.version>
-        <postgresql.driver.version>42.2.5</postgresql.driver.version>
+        <h2.version>1.4.196</h2.version>
+        <hibernate.version>4.3.11.Final</hibernate.version>
+        <liquibase.version>3.5.3</liquibase.version>
+        <postgresql.driver.version>42.1.1</postgresql.driver.version>
 
         <cpp.repo.name>maven-parent-pom</cpp.repo.name>
     </properties>
@@ -369,12 +367,6 @@
                     </dependencies>
                 </plugin>
 
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-gpg-plugin</artifactId>
-                    <version>${plugins.maven.gpg.version}</version>
-                </plugin>
-
                 <!-- Make sure the generated web.xml is added to the WAR and not the default one -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -525,12 +517,6 @@
                             <excludedClass>*IT</excludedClass>
                         </excludedClasses>
                     </configuration>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.kohsuke</groupId>
-                    <artifactId>pgp-maven-plugin</artifactId>
-                    <version>${plugins.pgp.maven.version}</version>
                 </plugin>
             </plugins>
 
