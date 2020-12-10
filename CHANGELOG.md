@@ -4,7 +4,7 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-## [8.0.0] - 2018-11-02
+## [8.0.0-M1] - 2020-12-09
 - Java 11 Upgrade
     - plugins.maven-plugin-plugin.version 3.6
     - plugins.maven.compiler.version 3.8.0
@@ -15,7 +15,7 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
     - `--illegal-access=permit` for maven-surefire-plugin
 
 
-## [2.0.0] - 2018-11-02
+## [2.0.0] - 2020-11-02
 ### Changed
 - Updated parent maven-super-pom to version 2.0.0
 - Moved to new Cloudsmith.io repository for hosting maven artifacts
