@@ -4,6 +4,16 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+## [8.0.0] - 2018-11-02
+- Java 11 Upgrade
+    - plugins.maven-plugin-plugin.version 3.6
+    - plugins.maven.compiler.version 3.8.0
+    - plugins.versions.version 2.5
+    - plugins.maven.surefire.version 2.22.2
+    - plugins.maven.failsafe.version 2.22.2
+    - plugins.jacoco.version 0.8.4
+    - `--illegal-access=permit` for maven-surefire-plugin
+
 
 ## [2.0.0] - 2018-11-02
 ### Changed
