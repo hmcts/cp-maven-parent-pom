@@ -86,6 +86,9 @@
         <liquibase.version>3.5.3</liquibase.version>
         <postgresql.driver.version>42.1.1</postgresql.driver.version>
 
+        <!-- versions required for java 11 -->
+        <jaxb-api.version>2.3.1</jaxb-api.version>
+
         <cpp.repo.name>maven-parent-pom</cpp.repo.name>
     </properties>
 
@@ -479,6 +482,13 @@
                     <groupId>org.eluder.coveralls</groupId>
                     <artifactId>coveralls-maven-plugin</artifactId>
                     <version>${plugins.coveralls.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>javax.xml.bind</groupId>
+                            <artifactId>jaxb-api</artifactId>
+                            <version>${jaxb-api.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
 
                 <plugin>
