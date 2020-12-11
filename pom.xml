@@ -87,7 +87,8 @@
         <postgresql.driver.version>42.1.1</postgresql.driver.version>
 
         <!-- versions required for java 11 -->
-        <jaxb-api.version>2.3.1</jaxb-api.version>
+        <jaxb-core.version>2.3.0.1</jaxb-core.version>
+        <jaxb.version>2.3.1</jaxb.version>
 
         <cpp.repo.name>maven-parent-pom</cpp.repo.name>
     </properties>
@@ -486,7 +487,7 @@
                         <dependency>
                             <groupId>javax.xml.bind</groupId>
                             <artifactId>jaxb-api</artifactId>
-                            <version>${jaxb-api.version}</version>
+                            <version>${jaxb.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>

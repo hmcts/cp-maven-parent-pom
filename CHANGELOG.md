@@ -4,6 +4,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+## [8.0.0-M3] - 2020-12-11
+### Added
+- Added jaxb versions for java core dependencies now external in Java 11
+
 ## [8.0.0-M2] - 2020-12-11
 ### Fixed
 - Added dependency on jaxb-api to coveralls-maven-plugin to fix ClassNotFoundException in Java 11
