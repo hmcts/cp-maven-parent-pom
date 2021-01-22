@@ -4,6 +4,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+## [11.0.0-M1] - 2020-01-22
+### Changed
+- Bumped major version number to 11 to match java 11, and the new version of the platform
+
 ## [8.0.0-M3] - 2020-12-11
 ### Added
 - Added jaxb versions for java core dependencies now external in Java 11
