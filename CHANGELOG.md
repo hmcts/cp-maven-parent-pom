@@ -4,6 +4,12 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+## [11.0.0-M2] - 2020-02-04
+### Changed
+- Update to JEE 8
+  - Update javaee-api version to 8.0.1
+- Update postgresql.driver version to 42.2.18
+
 ## [11.0.0-M1] - 2020-01-22
 ### Changed
 - Bumped major version number to 11 to match java 11, and the new version of the platform

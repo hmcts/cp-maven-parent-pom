@@ -25,8 +25,8 @@
 
         <!-- Java API versions targeted -->
         <java.se.version>11</java.se.version>
-        <java.ee.version>7</java.ee.version>
-        <javaee-api.version>7.0</javaee-api.version>
+        <java.ee.version>8</java.ee.version>
+        <javaee-api.version>8.0.1</javaee-api.version><javaee-api.version>8.0.1</javaee-api.version>
 
         <!-- Compilation properties -->
         <compiler.release>11</compiler.release>
@@ -84,7 +84,7 @@
         <h2.version>1.4.196</h2.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
         <liquibase.version>3.5.3</liquibase.version>
-        <postgresql.driver.version>42.1.1</postgresql.driver.version>
+        <postgresql.driver.version>42.2.18</postgresql.driver.version>
 
         <!-- versions required for java 11 -->
         <jaxb-core.version>2.3.0.1</jaxb-core.version>
