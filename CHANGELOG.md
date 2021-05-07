@@ -4,6 +4,11 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+## [11.0.0-M3] - 2020-05-07
+### Changed
+- Temporarily disable dependency convergence for maven-enforcer-plugin until the 
+  overrides are done 
+
 ## [11.0.0-M2] - 2020-02-04
 ### Changed
 - Update to JEE 8
