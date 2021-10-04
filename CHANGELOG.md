@@ -5,7 +5,11 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
-## [2.0.0] - 2018-11-02
+## [2.0.1] - 2021-10-04
+### Changed
+- Re-release of pom to fix corrupt file in artifactory. No other changes                       
+
+## [2.0.0] - 2020-09-22
 ### Changed
 - Updated parent maven-super-pom to version 2.0.0
 - Moved to new Cloudsmith.io repository for hosting maven artifacts
