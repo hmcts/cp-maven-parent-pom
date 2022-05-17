@@ -83,7 +83,7 @@
 
         <h2.version>1.4.196</h2.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
-        <liquibase.version>3.5.3</liquibase.version>
+        <liquibase.version>4.10.0</liquibase.version>
         <postgresql.driver.version>42.2.18</postgresql.driver.version>
 
         <!-- versions required for java 11 -->
