@@ -4,6 +4,12 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+## [11.0.0-M5] - 2020-05-23
+### Changed
+- Moved versions of liquibase dependencies to be properties of this pom:
+  - snakeyaml.version: 1.30
+  - picocli.version: 4.6.3
+
 ## [11.0.0-M4] - 2020-05-17
 ### Changed
 - Update liquibase.version to 4.10.0
