@@ -4,30 +4,17 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-## [11.0.0-M5] - 2020-05-23
+
+## [11.0.0] - 2023-01-25
 ### Changed
+- Bumped the version number to 11.0.0 to match the java 11 versions of the framework
+- Update liquibase.version to 4.10.0
 - Moved versions of liquibase dependencies to be properties of this pom:
   - snakeyaml.version: 1.30
   - picocli.version: 4.6.3
-
-## [11.0.0-M4] - 2020-05-17
-### Changed
-- Update liquibase.version to 4.10.0
-
-## [11.0.0-M3] - 2020-05-07
-### Changed
-- Temporarily disable dependency convergence for maven-enforcer-plugin until the 
-  overrides are done 
-
-## [11.0.0-M2] - 2020-02-04
-### Changed
 - Update to JEE 8
   - Update javaee-api version to 8.0.1
 - Update postgresql.driver version to 42.2.18
-
-## [11.0.0-M1] - 2020-01-22
-### Changed
-- Bumped major version number to 11 to match java 11, and the new version of the platform
 
 ## [8.0.0-M3] - 2020-12-11
 ### Added
