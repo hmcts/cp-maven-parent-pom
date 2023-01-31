@@ -5,6 +5,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [11.0.1] - 2023-02-01
+### Changed
+- Downgraded maven minimum version to 3.3.9 until the pipeline maven version is updated
+
 ## [11.0.0] - 2023-01-25
 ### Changed
 - Bumped the version number to 11.0.0 to match the java 11 versions of the framework
