@@ -5,9 +5,9 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
-## [17.0.0-M3] - 2023-02-24
+## [17.0.0-M3] - 2023-03-08
 ### Changed
-- Downgrade h2 to 1.4.200 as 2.x.x is too strict for our tests
+- Downgrade h2 to 1.4.196 as 2.x.x is too strict for our tests
 
 ## [17.0.0-M2] - 2023-02-15
 ### Changed
