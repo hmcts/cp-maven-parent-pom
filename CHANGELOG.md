@@ -5,9 +5,13 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
-## [17.0.0-M4] - 2023-03-24
+## [17.0.0-M5] - 2023-03-24
 ### Changed
 - Remove illegal-access argument (not valid for java 17) from sure fire plugin
+
+## [17.0.0-M4] - 2023-03-24
+### Changed
+- Dummy release, due to error in release process
 
 ## [17.0.0-M3] - 2023-03-08
 ### Changed
