@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>maven-parent-pom</artifactId>
-    <version>17.0.0-M4</version>
+    <version>17.0.0-M5-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
