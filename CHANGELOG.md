@@ -5,29 +5,12 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
-## [17.0.0-M6] - 2023-03-27
-### Changed
-- Remove illegal-access argument from plugin management (not valid for java 17) of sure fire plugin
-
-## [17.0.0-M5] - 2023-03-24
-### Changed
-- Remove illegal-access argument (not valid for java 17) from sure fire plugin
-
-## [17.0.0-M4] - 2023-03-24
-### Changed
-- Dummy release, due to error in release process
-
-## [17.0.0-M3] - 2023-03-08
-### Changed
-- Downgrade h2 to 1.4.196 as 2.x.x is too strict for our tests
-
-## [17.0.0-M2] - 2023-02-15
-### Changed
-- Update maven-super-pom
-
-## [17.0.0-M1] - 2023-02-02
+## [17.0.0] - 2023-05-05
 ### Changed
 - Update to OpenJdk 17
+### Removed
+- Remove illegal-access argument from plugin management (not valid for java 17) of sure fire plugin
+- Remove illegal-access argument (not valid for java 17) from sure fire plugin
 
 ## [11.0.1] - 2023-02-01
 ### Changed
