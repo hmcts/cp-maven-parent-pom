@@ -26,7 +26,7 @@
         <!-- Jakarta API versions targeted -->
         <java.major.version>17</java.major.version>
         <jakarta.ee.version>10</jakarta.ee.version>
-        <jakartaee-api.version>10</jakartaee-api.version>
+        <jakartaee-api.version>10.0.0</jakartaee-api.version>
 
         <!-- Compilation properties -->
         <compiler.debug>true</compiler.debug>
