@@ -87,7 +87,10 @@
         <snakeyaml.version>1.33</snakeyaml.version>
         <picocli.version>4.6.3</picocli.version>
 
-        <jaxb.version>2.3.1</jaxb.version>
+        <jaxb.version>2.3.1</jaxb.version> <!-- TODO remove this -->
+        <xml-bind-core.version>4.0.3</xml-bind-core.version>
+        <xml-bind-api.version>4.0.0</xml-bind-api.version>
+        <xml-bind-impl.version>4.0.3</xml-bind-impl.version>
 
         <cpp.repo.name>maven-parent-pom</cpp.repo.name>
     </properties>
