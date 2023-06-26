@@ -4,6 +4,8 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+Migrate Java EE 8 to Jakarta EE 10
 
 ## [17.0.0] - 2023-05-05
 ### Changed

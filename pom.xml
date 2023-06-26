@@ -23,10 +23,10 @@
         <enforcer.java.version.range>[17,)</enforcer.java.version.range>
 
 
-        <!-- Java API versions targeted -->
+        <!-- Jakarta API versions targeted -->
         <java.major.version>17</java.major.version>
-        <java.ee.version>8</java.ee.version>
-        <javaee-api.version>8.0.1</javaee-api.version>
+        <jakarta.ee.version>10</jakarta.ee.version>
+        <jakartaee-api.version>10</jakartaee-api.version>
 
         <!-- Compilation properties -->
         <compiler.debug>true</compiler.debug>
@@ -69,12 +69,12 @@
         <plugins.pitest.version>1.2.4</plugins.pitest.version>
         <pitest.enabled>false</pitest.enabled>
 
-        <!-- Javadoc links to Java APIs -->
+        <!-- Javadoc links to Jakarta APIs -->
         <javadoc.java.link>http://download.oracle.com/javase/${java.major.version}/docs/api/
         </javadoc.java.link>
-        <javadoc.javaee.link>http://download.oracle.com/javaee/${java.ee.version}/api/
-        </javadoc.javaee.link>
-        <javadoc.javamail.link>http://javamail.kenai.com/nonav/javadocs/</javadoc.javamail.link>
+        <javadoc.jakartaee.link>https://jakarta.ee/specifications/platform/${jakarta.ee.version}/apidocs
+        </javadoc.jakartaee.link>
+        <javadoc.jakartamail.link>https://jakarta.ee/specifications/mail/2.0/jakarta-mail-spec-2.0.html</javadoc.jakartamail.link>
 
         <plugins.jacoco.version>0.8.8</plugins.jacoco.version>
 
@@ -87,8 +87,6 @@
         <snakeyaml.version>1.33</snakeyaml.version>
         <picocli.version>4.6.3</picocli.version>
 
-        <!-- versions required for java 11 -->
-        <jaxb-core.version>2.3.0.1</jaxb-core.version>
         <jaxb.version>2.3.1</jaxb.version>
 
         <cpp.repo.name>maven-parent-pom</cpp.repo.name>
@@ -387,7 +385,7 @@
                     <version>${plugins.maven.war.version}</version>
                     <configuration>
                         <packagingExcludes>WEB-INF/web.xml</packagingExcludes>
-                        <!-- Java EE 7 doesn't require web.xml, Maven needs to catch up! -->
+                        <!-- Jakarta EE doesn't require web.xml, Maven needs to catch up! -->
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                         <archive>
                             <manifest>
@@ -657,13 +655,13 @@
 
     <profiles>
 
-        <!-- Properties representing Java EE specific API versions -->
+        <!-- Properties representing Jakarta EE specific API versions -->
         <profile>
-            <id>java-ee-7</id>
+            <id>jakarta-ee-10</id>
             <activation>
                 <property>
-                    <name>java.ee.version</name>
-                    <value>7</value>
+                    <name>jakarta.ee.version</name>
+                    <value>10</value>
                 </property>
             </activation>
             <properties>
@@ -730,8 +728,8 @@
                                     <detectLinks/>
                                     <links>
                                         <link>${javadoc.java.link}</link>
-                                        <link>${javadoc.javamail.link}</link>
-                                        <link>${javadoc.javaee.link}</link>
+                                        <link>${javadoc.jakartamail.link}</link>
+                                        <link>${javadoc.jakartaee.link}</link>
                                     </links>
                                     <quiet>true</quiet>
                                     <source>${maven.compiler.source}</source>
