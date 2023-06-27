@@ -51,7 +51,7 @@
         <plugins.maven.site.version>3.6</plugins.maven.site.version>
         <plugins.maven.javadoc.version>2.10.4</plugins.maven.javadoc.version>
         <plugins.maven.source.version>3.0.1</plugins.maven.source.version>
-        <plugins.maven-plugin-plugin.version>3.7.1</plugins.maven-plugin-plugin.version>
+        <plugins.maven-plugin-plugin.version>3.9.0</plugins.maven-plugin-plugin.version>
 
         <plugins.maven.wagon.version>2.10</plugins.maven.wagon.version>
         <plugins.maven.war.version>3.1.0</plugins.maven.war.version>
@@ -91,6 +91,7 @@
         <xml-bind-core.version>4.0.3</xml-bind-core.version>
         <xml-bind-api.version>4.0.0</xml-bind-api.version>
         <xml-bind-impl.version>4.0.3</xml-bind-impl.version>
+        <eclipse-parson.version>1.1.1</eclipse-parson.version>
 
         <cpp.repo.name>maven-parent-pom</cpp.repo.name>
     </properties>
