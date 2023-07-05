@@ -63,8 +63,8 @@
         <plugins.coveralls.version>4.3.0</plugins.coveralls.version>
 
         <!-- testing -->
-        <plugins.maven.surefire.version>2.22.2</plugins.maven.surefire.version>
-        <plugins.maven.failsafe.version>2.22.2</plugins.maven.failsafe.version>
+        <plugins.maven.surefire.version>3.1.2</plugins.maven.surefire.version>
+        <plugins.maven.failsafe.version>3.1.2</plugins.maven.failsafe.version>
         <plugins.maven.processor.version>3.3.1</plugins.maven.processor.version>
         <plugins.pitest.version>1.2.4</plugins.pitest.version>
         <pitest.enabled>false</pitest.enabled>

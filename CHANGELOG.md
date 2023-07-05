@@ -5,6 +5,11 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [17.1.0] - 2023-07-05
+### Changed
+- Update maven-failsafe-plugin to 3.1.2
+- Update maven-surefire-plugin to 3.1.2
+
 ## [17.0.0] - 2023-05-05
 ### Changed
 - Update to OpenJdk 17
