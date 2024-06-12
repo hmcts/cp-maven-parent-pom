@@ -61,6 +61,7 @@
         <plugins.buildnumber.version>1.4</plugins.buildnumber.version>
         <plugins.buildhelper.version>3.0.0</plugins.buildhelper.version>
         <plugins.coveralls.version>4.3.0</plugins.coveralls.version>
+        <plugins.maven.sonar.version>3.11.0.3922</plugins.maven.sonar.version>
 
         <!-- testing -->
         <plugins.maven.surefire.version>3.1.2</plugins.maven.surefire.version>
@@ -166,6 +167,11 @@
         <!-- Default plugin versions and management -->
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>${plugins.maven.sonar.version}</version>
+                </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
