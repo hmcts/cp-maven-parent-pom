@@ -5,6 +5,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [17.1.1] - 2024-06-12
+### Added
+- Add maven-sonar-plugin to pluginManagement
+
 ## [17.1.0] - 2023-07-05
 ### Changed
 - Update maven-failsafe-plugin to 3.1.2
