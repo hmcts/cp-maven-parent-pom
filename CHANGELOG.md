@@ -4,8 +4,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [8.0.1] - 2025-01-20
 ### Changed
-- Update postgresql.driver.version to 42.3.2
+- Updated postgresql.driver.version to 42.3.2
 
 ## [8.0.0] - 2024-01-10
 ### Changed
