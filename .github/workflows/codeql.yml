@@ -11,7 +11,7 @@ on:
 
 jobs:
   analyze:
-    name: Analyze
+    name: Analyze (${{ matrix.language }} - Java ${{ matrix.java }})
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -23,6 +23,7 @@ jobs:
       matrix:
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
         language: [ 'java' ]
+        java: [ '17', '21', '23' ]
 
     steps:
       - name: Checkout repository
@@ -39,9 +40,9 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: ${{ matrix.java }}
 
-      - name: Maven Build ONLY
+      - name: Maven Build (Java ${{ matrix.java }})
         run: |
           mvn clean install -DskipTests
 
@@ -60,9 +61,9 @@ jobs:
         # This ensures:
         # - The SBOM is archived with the CodeQL scan output
         # - It's available to download and inspect from the GitHub Actions UI
-      - name: Upload SBOM
+      - name: Upload SBOM (Java ${{ matrix.java }})
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: sbom
+          name: sbom-java-${{ matrix.java }}
           path: build/resources/main/META-INF/sbom/application.cdx.json
