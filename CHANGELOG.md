@@ -5,6 +5,7 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 - Github migration to HMCTS Organisation
+- Bumped h2.version to 2.3.232 
 
 ## [17.101.0] - 2025-01-08
 ### Changed
