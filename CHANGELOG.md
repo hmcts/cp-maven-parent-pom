@@ -5,6 +5,14 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [21.0.0-SNAPSHOT] - 2026-03-26
+### Changed
+- Upgraded minimum Java version requirement from 17 to 21 (`enforcer.java.version.range`, `java.major.version`)
+- Updated Jakarta EE version properties: `java.ee.version` to `10`, `javaee-api.version` to `10.0.0`
+- Replaced `javax.xml.bind:jaxb-api` with `jakarta.xml.bind:jakarta.xml.bind-api` in `coveralls-maven-plugin` dependency
+- Updated `maven-plugin-plugin` from `3.7.1` to `3.9.0`
+- Added `WEB-INF/lib/resteasy-*.jar` to `maven-war-plugin` `<packagingExcludes>` — prevents bundled RESTEasy JARs from conflicting with WildFly's own RESTEasy module when deploying without `web.xml`
+
 ## [17.103.0] - 2025-07-11
 ### Changed
 - Github migration to HMCTS Organisation
