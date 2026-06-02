@@ -5,7 +5,7 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
-## [21.0.0-M1] - 2026-06-02
+## [21.0.0-M2] - 2026-06-02
 ### Changed
 - Upgraded minimum Java version requirement from 17 to 21 (`enforcer.java.version.range`, `java.major.version`)
 - Updated Jakarta EE version properties: `java.ee.version` → `10`, `javaee-api.version` → `10.0.0`
