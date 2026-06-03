@@ -5,13 +5,14 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
-## [21.0.0-SNAPSHOT] - 2026-03-26
+## [21.0.0-M2] - 2026-06-02
 ### Changed
 - Upgraded minimum Java version requirement from 17 to 21 (`enforcer.java.version.range`, `java.major.version`)
-- Updated Jakarta EE version properties: `java.ee.version` to `10`, `javaee-api.version` to `10.0.0`
-- Replaced `javax.xml.bind:jaxb-api` with `jakarta.xml.bind:jakarta.xml.bind-api` in `coveralls-maven-plugin` dependency
+- Updated Jakarta EE version properties: `java.ee.version` → `10`, `javaee-api.version` → `10.0.0`
+- Replaced `javax.xml.bind:jaxb-api` with `jakarta.xml.bind:jakarta.xml.bind-api` in `coveralls-maven-plugin` plugin dependency (required for Java 21 — JAXB was removed from the JDK)
 - Updated `maven-plugin-plugin` from `3.7.1` to `3.9.0`
-- Added `WEB-INF/lib/resteasy-*.jar` to `maven-war-plugin` `<packagingExcludes>` — prevents bundled RESTEasy JARs from conflicting with WildFly's own RESTEasy module when deploying without `web.xml`
+- Added `WEB-INF/lib/resteasy-*.jar` to `maven-war-plugin` `<packagingExcludes>` — prevents WildFly 32's `jaxrs` subsystem deactivating itself when it finds RESTEasy JARs inside `WEB-INF/lib`
+- Updated JaCoCo to `0.8.12` for Java 21 class file support
 
 ## [17.103.0] - 2025-07-11
 ### Changed
