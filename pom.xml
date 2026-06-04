@@ -7,11 +7,11 @@
     <parent>
         <groupId>uk.gov.justice</groupId>
         <artifactId>maven-super-pom</artifactId>
-        <version>21.0.0-SNAPSHOT</version>
+        <version>25.104.0-M1</version>
     </parent>
 
     <artifactId>maven-parent-pom</artifactId>
-    <version>21.0.0-SNAPSHOT</version>
+    <version>25.104.0-M1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -54,7 +54,7 @@
         <plugins.maven.site.version>3.6</plugins.maven.site.version>
         <plugins.maven.javadoc.version>2.10.4</plugins.maven.javadoc.version>
         <plugins.maven.source.version>3.0.1</plugins.maven.source.version>
-        <plugins.maven-plugin-plugin.version>3.9.0</plugins.maven-plugin-plugin.version>
+        <plugins.maven-plugin-plugin.version>3.15.2</plugins.maven-plugin-plugin.version>
 
         <plugins.maven.wagon.version>2.10</plugins.maven.wagon.version>
         <plugins.maven.war.version>3.1.0</plugins.maven.war.version>
@@ -80,11 +80,11 @@
         </javadoc.javaee.link>
         <javadoc.javamail.link>http://javamail.kenai.com/nonav/javadocs/</javadoc.javamail.link>
 
-        <plugins.jacoco.version>0.8.12</plugins.jacoco.version>
+        <plugins.jacoco.version>0.8.14</plugins.jacoco.version>
 
         <h2.version>2.3.232</h2.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
-        <postgresql.driver.version>42.3.2</postgresql.driver.version>
+        <postgresql.driver.version>42.7.7</postgresql.driver.version>
 
         <!-- liquibase and dependencies -->
         <liquibase.version>4.10.0</liquibase.version>
