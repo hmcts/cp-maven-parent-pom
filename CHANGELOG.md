@@ -5,6 +5,30 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [25.104.0-M3] - 2026-06-08
+### Changed
+- Upgraded `maven-surefire-plugin` and `maven-failsafe-plugin` from `3.1.2` to `3.5.6` — Maven 3.9.16 defaults
+- Upgraded `maven-jar-plugin` from `3.0.2` to `3.5.0` — Maven 3.9.16 default
+- Upgraded `maven-install-plugin` from `2.5.2` to `3.1.4` — Maven 3.9.16 default
+- Upgraded `maven-deploy-plugin` from `2.8.2` to `3.1.4` — Maven 3.9.16 default
+- Upgraded `maven-war-plugin` from `3.1.0` to `3.5.1` — Maven 3.9.16 default
+- Upgraded `maven-resources-plugin` from `3.0.2` to `3.4.0` — Maven 3.9.16 default
+- Upgraded `maven-enforcer-plugin` from `3.0.0-M3` to `3.4.1`
+- Upgraded `maven-assembly-plugin` from `3.0.0` to `3.7.1`
+- Upgraded `maven-clean-plugin` from `3.0.0` to `3.2.0`
+- Upgraded `maven-dependency-plugin` from `3.0.1` to `3.6.1`
+- Upgraded `maven-site-plugin` from `3.6` to `3.12.1`
+- Upgraded `maven-javadoc-plugin` from `2.10.4` to `3.6.3`
+- Upgraded `maven-source-plugin` from `3.0.1` to `3.3.1`
+- Upgraded `maven-wagon-plugin` from `2.10` to `3.5.3`
+- Upgraded `versions-maven-plugin` from `2.5` to `2.16.2`
+- Upgraded `maven-shade-plugin` from `3.0.0` to `3.6.0`
+- Upgraded `build-helper-maven-plugin` from `3.0.0` to `3.6.0`
+- Upgraded `buildnumber-maven-plugin` from `1.4` to `3.2.0`
+- Upgraded `pitest` from `1.2.4` to `1.19.1`
+- Upgraded `liquibase.version` from `4.10.0` to `4.27.0`
+- Upgraded `snakeyaml.version` from `1.33` to `2.3` — resolves CVE fixes; updated as a Liquibase transitive dependency
+
 ## [25.104.0-M2] - 2026-06-08
 ### Changed
 - Upgraded `maven-compiler-plugin` from `3.10.1` to `3.15.0` — required for full Java 25 source/target compatibility (Maven 3.9.16 default)
