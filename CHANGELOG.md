@@ -5,6 +5,25 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [25.104.0-M2] - 2026-06-08
+### Changed
+- Upgraded `maven-compiler-plugin` from `3.10.1` to `3.15.0` — required for full Java 25 source/target compatibility (Maven 3.9.16 default)
+
+## [25.104.0-M1] - 2026-06-08
+### Changed
+- Upgraded to Java 25 / WildFly 40 / Jakarta EE 11 (25.104.x release line)
+- Updated minimum Java version enforcement: `enforcer.java.version.range` → `[21,)`, `java.major.version` → `21`
+- Updated Jakarta EE version properties: `java.ee.version` → `10`, `javaee-api.version` → `10.0.0`
+- Upgraded `maven-plugin-plugin` from `3.7.1` to `3.15.2` — required for Java 25 bytecode analysis (ASM 9.9)
+- Upgraded `JaCoCo` from `0.8.8` to `0.8.14` — required for Java 25 class file (major version 69) instrumentation
+- Added `-Dnet.bytebuddy.experimental=true` to surefire `argLine` for ByteBuddy Java 25 compatibility
+- Added `WEB-INF/lib/resteasy-*.jar` to `maven-war-plugin` `<packagingExcludes>` — prevents bundled RESTEasy JARs from conflicting with WildFly's own RESTEasy module
+- Added Jakarta EE 11 version properties: `parsson.version`, `glassfish-json.version`, `jakarta.annotation-api.version`, `jakarta.jms-api.version`, `jakarta.xml.bind-api.version`, `persistence-api.version` and others
+- Replaced `javax.xml.bind:jaxb-api` with `jakarta.xml.bind:jakarta.xml.bind-api` in `coveralls-maven-plugin` dependency block
+- Moved `h2` and `liquibase-core` dependency management to `cp-maven-common-bom`
+### Security
+- Upgraded `postgresql.driver.version` from `42.3.2` to `42.7.7` — resolves CVE-2022-31197 (High) and CVE-2024-1597 (Critical); first version with full PostgreSQL 15/16 support
+
 ## [21.0.0-SNAPSHOT] - 2026-03-26
 ### Changed
 - Upgraded minimum Java version requirement from 17 to 21 (`enforcer.java.version.range`, `java.major.version`)
