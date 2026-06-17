@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>maven-parent-pom</artifactId>
-    <version>25.104.0-M4-SNAPSHOT</version>
+    <version>25.104.0-M4</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -87,8 +87,16 @@
         <postgresql.driver.version>42.7.7</postgresql.driver.version>
 
         <!-- liquibase and dependencies -->
-        <liquibase.version>4.27.0</liquibase.version>
-        <snakeyaml.version>2.3</snakeyaml.version>
+        <liquibase.version>4.30.0</liquibase.version>
+        <!--
+            snakeyaml is pinned at 1.33 (the last 1.x release). snakeyaml 2.x removed the
+            7-arg MappingNode constructor that org.raml:raml-parser calls, causing
+            NoSuchMethodError at test time. The Liquibase fat JARs bundle their own snakeyaml
+            internally via maven-shade, so project classpath snakeyaml does not affect them.
+            jackson-dataformat-yaml is also pinned at 2.14.3 (see cp-maven-common-bom) for
+            the same reason — both pins must stay in lockstep.
+        -->
+        <snakeyaml.version>1.33</snakeyaml.version>
         <picocli.version>4.6.3</picocli.version>
 
         <!-- versions required for java 11 -->
