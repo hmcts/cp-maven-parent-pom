@@ -87,7 +87,7 @@
         <postgresql.driver.version>42.7.7</postgresql.driver.version>
 
         <!-- liquibase and dependencies -->
-        <liquibase.version>4.30.0</liquibase.version>
+        <liquibase.version>5.0.3</liquibase.version>
         <!--
             snakeyaml is pinned at 1.33 (the last 1.x release). snakeyaml 2.x removed the
             7-arg MappingNode constructor that org.raml:raml-parser calls, causing
