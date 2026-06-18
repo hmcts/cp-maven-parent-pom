@@ -5,6 +5,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [25.104.0-M6] - 2026-06-18
+### Changed
+- Upgraded `liquibase.version` from `4.30.0` to `5.0.3` — resolves Java 25 `VerifyError` in `liquibase-commercial:4.30.0` (`DbclHistoryCommandStep.setupSnakeYaml`); `liquibase-maven-plugin:5.0.3` has no dependency on `liquibase-commercial`
+
 ## [25.104.0-M3] - 2026-06-08
 ### Changed
 - Upgraded `maven-surefire-plugin` and `maven-failsafe-plugin` from `3.1.2` to `3.5.6` — Maven 3.9.16 defaults
