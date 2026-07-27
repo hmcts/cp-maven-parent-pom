@@ -4,6 +4,8 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Removed the deprecated `maven-version` goal execution from the `build-helper-maven-plugin` configuration — Maven provides `${maven.version}` natively since 3.0.4 (MNG-4112), so the goal was redundant and logged `[WARNING] Goal 'maven-version' is deprecated ... So goal can be removed.` on every build.
 
 ## [25.104.0-M7] - 2026-07-23
 ### Fixed
