@@ -468,7 +468,6 @@
                         <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
                         <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
                         <shortRevisionLength>7</shortRevisionLength>
-                        <useLatestCommittedRevision>false</useLatestCommittedRevision>
                     </configuration>
                 </plugin>
 

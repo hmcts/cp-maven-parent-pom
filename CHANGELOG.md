@@ -5,6 +5,10 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 
 ## [Unreleased]
 
+## [25.104.0-M7] - 2026-07-23
+### Fixed
+- Removed the dead `<useLatestCommittedRevision>` entry from the `buildnumber-maven-plugin` config (unknown parameter — the real name is `useLastCommittedRevision`, and the value was the default `false`), eliminating the `[WARNING] Parameter 'useLatestCommittedRevision' is unknown for plugin 'buildnumber-maven-plugin'` build warning.
+
 ## [25.104.0-M6] - 2026-06-18
 ### Changed
 - Upgraded `liquibase.version` from `4.30.0` to `5.0.3` — resolves Java 25 `VerifyError` in `liquibase-commercial:4.30.0` (`DbclHistoryCommandStep.setupSnakeYaml`); `liquibase-maven-plugin:5.0.3` has no dependency on `liquibase-commercial`
