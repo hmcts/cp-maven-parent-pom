@@ -7,7 +7,7 @@
     <parent>
         <groupId>uk.gov.justice</groupId>
         <artifactId>maven-super-pom</artifactId>
-        <version>25.104.0-M1</version>
+        <version>25.104.0</version>
     </parent>
 
     <artifactId>maven-parent-pom</artifactId>
@@ -23,13 +23,13 @@
 
         <!-- Enforcer settings - ranges need to be in the format defined at http://maven.apache.org/enforcer/enforcer-rules/versionRanges.html -->
         <enforcer.maven.version.range>[${maven.minimum.version},)</enforcer.maven.version.range>
-        <enforcer.java.version.range>[21,)</enforcer.java.version.range>
+        <enforcer.java.version.range>[25,)</enforcer.java.version.range>
 
 
         <!-- Java API versions targeted -->
-        <java.major.version>21</java.major.version>
-        <java.ee.version>10</java.ee.version>
-        <javaee-api.version>10.0.0</javaee-api.version>
+        <java.major.version>25</java.major.version>
+        <java.ee.version>11</java.ee.version>
+        <javaee-api.version>11.0.0</javaee-api.version>
 
         <!-- Compilation properties -->
         <compiler.debug>true</compiler.debug>
@@ -116,7 +116,7 @@
         <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
         <javax.persistence-api.version>2.2</javax.persistence-api.version>
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
-        <jee.api.version>10.0.0</jee.api.version>
+        <jee.api.version>11.0.0</jee.api.version>
         <parsson.version>1.1.0</parsson.version>
         <persistence-api.version>3.1.0</persistence-api.version>
     </properties>

@@ -4,19 +4,26 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-### Fixed
-- Removed the deprecated `maven-version` goal execution from the `build-helper-maven-plugin` configuration — Maven provides `${maven.version}` natively since 3.0.4 (MNG-4112), so the goal was redundant and logged `[WARNING] Goal 'maven-version' is deprecated ... So goal can be removed.` on every build.
 
-## [25.104.0-M7] - 2026-07-23
-### Fixed
-- Removed the dead `<useLatestCommittedRevision>` entry from the `buildnumber-maven-plugin` config (unknown parameter — the real name is `useLastCommittedRevision`, and the value was the default `false`), eliminating the `[WARNING] Parameter 'useLatestCommittedRevision' is unknown for plugin 'buildnumber-maven-plugin'` build warning.
+## [25.104.0] - 2026-09-07
+First official (non-milestone) release of the Java 25 / WildFly 40 / Jakarta EE 11 line,
+consolidating milestones `25.104.0-M1` to `25.104.0-M7` and the never-released Java 21 /
+Jakarta EE 10 step that preceded them.
 
-## [25.104.0-M6] - 2026-06-18
+### Added
+- `-Dnet.bytebuddy.experimental=true` to the surefire `argLine` for ByteBuddy Java 25 compatibility
+- `WEB-INF/lib/resteasy-*.jar` to `maven-war-plugin` `<packagingExcludes>` — prevents bundled RESTEasy JARs from conflicting with WildFly's own RESTEasy module
+- Jakarta EE version properties: `parsson.version`, `glassfish-json.version`, `jakarta.annotation-api.version`, `jakarta.inject-api.version`, `jakarta.jms-api.version`, `jakarta.xml.bind-api.version`, `persistence-api.version` and others
+
 ### Changed
-- Upgraded `liquibase.version` from `4.30.0` to `5.0.3` — resolves Java 25 `VerifyError` in `liquibase-commercial:4.30.0` (`DbclHistoryCommandStep.setupSnakeYaml`); `liquibase-maven-plugin:5.0.3` has no dependency on `liquibase-commercial`
-
-## [25.104.0-M3] - 2026-06-08
-### Changed
+- Targeted Java 25: `java.major.version` → `25` (so `maven-compiler-plugin` builds with `--release 25`) and `enforcer.java.version.range` → `[25,)`, aligning with `cpp-platform-maven-parent-pom`
+- Targeted Jakarta EE 11: `java.ee.version` → `11`, `javaee-api.version` → `11.0.0`, `jee.api.version` → `11.0.0`
+- Upgraded `maven-compiler-plugin` from `3.10.1` to `3.15.0` — required for full Java 25 source/target compatibility (Maven 3.9.16 default)
+- Upgraded `maven-plugin-plugin` from `3.7.1` to `3.15.2` — required for Java 25 bytecode analysis (ASM 9.9)
+- Upgraded `JaCoCo` from `0.8.8` to `0.8.14` — required for Java 25 class file (major version 69) instrumentation
+- Upgraded `liquibase.version` from `4.10.0` to `5.0.3` — resolves Java 25 `VerifyError` in `liquibase-commercial:4.30.0` (`DbclHistoryCommandStep.setupSnakeYaml`); `liquibase-maven-plugin:5.0.3` has no dependency on `liquibase-commercial`
+- Replaced `javax.xml.bind:jaxb-api` with `jakarta.xml.bind:jakarta.xml.bind-api` in the `coveralls-maven-plugin` dependency block
+- Documented why `snakeyaml.version` stays pinned at `1.33`: snakeyaml 2.x drops the 7-arg `MappingNode` constructor that `org.raml:raml-parser` calls, causing `NoSuchMethodError` at test time. It must stay in lockstep with the `jackson-dataformat-yaml` `2.14.3` pin in `cp-maven-common-bom`
 - Upgraded `maven-surefire-plugin` and `maven-failsafe-plugin` from `3.1.2` to `3.5.6` — Maven 3.9.16 defaults
 - Upgraded `maven-jar-plugin` from `3.0.2` to `3.5.0` — Maven 3.9.16 default
 - Upgraded `maven-install-plugin` from `2.5.2` to `3.1.4` — Maven 3.9.16 default
@@ -36,25 +43,14 @@ on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 - Upgraded `build-helper-maven-plugin` from `3.0.0` to `3.6.0`
 - Upgraded `buildnumber-maven-plugin` from `1.4` to `3.2.0`
 - Upgraded `pitest` from `1.2.4` to `1.19.1`
-- Upgraded `liquibase.version` from `4.10.0` to `4.27.0`
-- Upgraded `snakeyaml.version` from `1.33` to `2.3` — resolves CVE fixes; updated as a Liquibase transitive dependency
 
-## [25.104.0-M2] - 2026-06-08
-### Changed
-- Upgraded `maven-compiler-plugin` from `3.10.1` to `3.15.0` — required for full Java 25 source/target compatibility (Maven 3.9.16 default)
+### Removed
+- `h2` and `liquibase-core` dependency management — moved to `cp-maven-common-bom`
 
-## [25.104.0-M1] - 2026-06-08
-### Changed
-- Upgraded to Java 25 / WildFly 40 / Jakarta EE 11 (25.104.x release line)
-- Updated minimum Java version enforcement: `enforcer.java.version.range` → `[21,)`, `java.major.version` → `21`
-- Updated Jakarta EE version properties: `java.ee.version` → `10`, `javaee-api.version` → `10.0.0`
-- Upgraded `maven-plugin-plugin` from `3.7.1` to `3.15.2` — required for Java 25 bytecode analysis (ASM 9.9)
-- Upgraded `JaCoCo` from `0.8.8` to `0.8.14` — required for Java 25 class file (major version 69) instrumentation
-- Added `-Dnet.bytebuddy.experimental=true` to surefire `argLine` for ByteBuddy Java 25 compatibility
-- Added `WEB-INF/lib/resteasy-*.jar` to `maven-war-plugin` `<packagingExcludes>` — prevents bundled RESTEasy JARs from conflicting with WildFly's own RESTEasy module
-- Added Jakarta EE 11 version properties: `parsson.version`, `glassfish-json.version`, `jakarta.annotation-api.version`, `jakarta.jms-api.version`, `jakarta.xml.bind-api.version`, `persistence-api.version` and others
-- Replaced `javax.xml.bind:jaxb-api` with `jakarta.xml.bind:jakarta.xml.bind-api` in `coveralls-maven-plugin` dependency block
-- Moved `h2` and `liquibase-core` dependency management to `cp-maven-common-bom`
+### Fixed
+- Removed the dead `<useLatestCommittedRevision>` entry from the `buildnumber-maven-plugin` config (unknown parameter — the real name is `useLastCommittedRevision`, and the value was the default `false`), eliminating the `[WARNING] Parameter 'useLatestCommittedRevision' is unknown for plugin 'buildnumber-maven-plugin'` build warning
+- Removed the deprecated `maven-version` goal execution from the `build-helper-maven-plugin` configuration — Maven provides `${maven.version}` natively since 3.0.4 (MNG-4112), so the goal was redundant and logged `[WARNING] Goal 'maven-version' is deprecated ... So goal can be removed.` on every build
+
 ### Security
 - Upgraded `postgresql.driver.version` from `42.3.2` to `42.7.7` — resolves CVE-2022-31197 (High) and CVE-2024-1597 (Critical); first version with full PostgreSQL 15/16 support
 
