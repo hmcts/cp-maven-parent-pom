@@ -3,7 +3,13 @@ All notable changes to this project will be documented in this file, which follo
 on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [25.104.1] - 2026-09-10
+### Changed
+- Updated the parent `maven-super-pom` to 25.104.1
+
+### Removed
+- Local declarations of `liquibase.version` and 20 Maven plugin version properties. These are now
+  declared once in `maven-super-pom` so that every inheriting pom shares a single value.
 
 ## [25.104.0] - 2026-09-07
 First official (non-milestone) release of the Java 25 / WildFly 40 / Jakarta EE 11 line,
