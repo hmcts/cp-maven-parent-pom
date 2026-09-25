@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file, which follo
 on [Keep a CHANGELOG](http://keepachangelog.com/). This project adheres to
 [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Security
+- Updated `postgresql.driver.version` 42.7.7 → 42.7.13, fixing CVE-2026-42198 (DoS through SCRAM PBKDF2
+  iterations) and CVE-2026-54291 (silent channel-binding downgrade)
+
 ## [25.104.1] - 2026-09-10
 ### Changed
 - Updated the parent `maven-super-pom` to 25.104.1
